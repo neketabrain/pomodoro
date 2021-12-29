@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image {
+  max-width: 320px;
+  width: calc(100vw - 32px);
+  max-height: 320px;
+  height: calc(100vw - 32px);
+  display: block;
+  position: relative;
+
+  path {
+    fill: var(--tomato);
+    transition: fill var(--transition);
+  }
+}
+
+.timer {
+  width: 65%;
+  height: 65%;
+  z-index: 1;
+  background-color: var(--tomato);
+  border-radius: 50%;
+  transition: background-color var(--transition);
+  position: absolute;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

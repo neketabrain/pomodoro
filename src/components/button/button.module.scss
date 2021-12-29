@@ -1,0 +1,47 @@
+.button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition);
+  background-color: transparent;
+  padding: 0 16px;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  color: white;
+  background-color: var(--tomato);
+  outline-color: var(--tomato-darkest);
+
+  &:hover,
+  &:focus {
+    background-color: var(--tomato-darkest);
+  }
+
+  &:active {
+    background-color: var(--tomato-dark);
+  }
+}
+
+.secondary {
+  color: var(--grey);
+  outline-color: var(--tomato-darkest);
+
+  &:hover,
+  &:focus {
+    color: var(--grey-darkest);
+  }
+
+  &:active {
+    color: var(--grey-dark);
+  }
+}
